@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat', type='text/css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons', type='text/css')
+      
+  body
+    #main_menu
+      h1(id='logo') Margaux Lapierre
+      ul(id= 'main_menu_nav')      
+        li 
+          a(href='/', class='main_menu_item') Accueil
+        li 
+          a(href='/presentation', class='main_menu_item') Présentation
+        li 
+          a(href='/methodes', class='main_menu_item') Méthodes de travail
+        li 
+          a(href='/travaux', class='main_menu_item') Mes travaux
+        li 
+          a(href='/contact', class='main_menu_item') Contact
+             
+    block content
